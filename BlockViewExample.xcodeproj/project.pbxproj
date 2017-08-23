@@ -66,6 +66,7 @@
 		EFACDAB01F4D3687002F734C /* CALayer+BlockLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+BlockLayer.m"; sourceTree = "<group>"; };
 		EFACDAB21F4D5233002F734C /* UIButton+BlockButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+BlockButton.h"; sourceTree = "<group>"; };
 		EFACDAB31F4D5233002F734C /* UIButton+BlockButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BlockButton.m"; sourceTree = "<group>"; };
+		EFACDAB91F4D61C0002F734C /* BlockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +152,7 @@
 		EFACDAA51F4D1FDA002F734C /* BlockView */ = {
 			isa = PBXGroup;
 			children = (
+				EFACDAB91F4D61C0002F734C /* BlockView.h */,
 				EFACDAA61F4D2012002F734C /* UIView+BlockView.h */,
 				EFACDAA71F4D2012002F734C /* UIView+BlockView.m */,
 				EFACDAA91F4D2AD7002F734C /* UILabel+BlockLabel.h */,

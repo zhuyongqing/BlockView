@@ -7,11 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIView+BlockView.h"
-#import "UILabel+BlockLabel.h"
-#import "UIImageView+BlockImageView.h"
-#import "CALayer+BlockLayer.h"
-#import "UIButton+BlockButton.h"
+#import "BlockView.h"
 @interface ViewController ()
 
 @end
