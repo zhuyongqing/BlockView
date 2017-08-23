@@ -22,6 +22,8 @@
 
 @property(nonatomic,copy,readonly) UIView *(^viewBounds)(CGRect);
 
+@property(nonatomic,copy,readonly) UIView *(^viewUserInteractionEnabled)(BOOL);
+
 
 + (instancetype)init;
 

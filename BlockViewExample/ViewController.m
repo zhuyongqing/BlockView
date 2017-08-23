@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
-#import "BlockView.h"
+#import "UIImageView+BlockImageView.h"
+#import "UILabel+BlockLabel.h"
+#import "UIButton+BlockButton.h"
+#import "CALayer+BlockLayer.h"
+#import "UIView+BlockView.h"
 @interface ViewController ()
+
+@property(nonatomic,strong) UIImageView *imgV;
+
 
 @end
 
@@ -17,15 +24,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UILabel.init
+    UILabel *label =  UILabel.init
     .labelText(@"block label")
     .labelFont([UIFont systemFontOfSize:15])
     .labelTextAlignment(NSTextAlignmentCenter)
-    .labelTextColor([UIColor blackColor])
-    .viewFrame(CGRectMake(0, 0, 100, 20))
+    .labelTextColor([UIColor blackColor]);
+    label.viewFrame(CGRectMake(0, 0, 100, 20))
     .viewCenter(self.view.center)
     .addToSuperView(self.view);
-    
+        
     [UIButton buttonWithType:UIButtonTypeCustom]
     .buttonTitle(@"start", UIControlStateNormal)
     .buttonAlignment(NSTextAlignmentCenter)
@@ -45,12 +52,11 @@
     .layer.layerBorderWidth(1)
     .layerBorderColor([UIColor blackColor].CGColor);
     
-   UIImageView.init
-    .imgVImage([UIImage imageNamed:@"back_star.jpg"])
-    .viewContentMode(UIViewContentModeScaleAspectFill)
+    self.imgV = UIImageView.init;
+    self.imgV.viewContentMode(UIViewContentModeScaleAspectFill)
     .viewFrame(CGRectMake(100, 200, 100, 100))
-    .addToSuperView(self.view)
-    .layer.layerMasksToBounds(YES);
+    .viewBackColor([UIColor blackColor])
+    .addToSuperView(self.view);
 }
 
 - (void)startBtnAction{

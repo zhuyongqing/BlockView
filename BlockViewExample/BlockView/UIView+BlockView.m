@@ -52,6 +52,20 @@ static NSString *frameKey = @"frameKey";
     };
 }
 
+- (UIView *(^)(CGRect))viewBounds{
+    return ^id(CGRect bounds){
+        self.bounds = bounds;
+        return self;
+    };
+}
+
+- (UIView *(^)(BOOL))viewUserInteractionEnabled{
+    return ^id(BOOL userInteraction){
+        self.userInteractionEnabled = YES;
+        return self;
+    };
+}
+
 
 
 @end
